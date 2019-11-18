@@ -8,7 +8,11 @@ importScripts('https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/
 onmessage = function (event) {
     var data = JSON.parse(event.data);
 
-    var result = self.hljs.highlightAuto(data.code);
+    var result = self.hljs.highlight(data.lang, data.code);
 
-    postMessage(JSON.stringify({result: result.value, index: data.index}));
+    postMessage(JSON.stringify({
+        result: {
+            value: result.value,
+        }, index: data.index
+    }));
 };

@@ -98,6 +98,11 @@ pre.highlight-wrap code {
     border-radius: 10px
 }
 
+
+.highlight-wrap > code > table {
+    color: #fff;
+}
+
 .copy-code {
     color: #fff;
     position: absolute;
