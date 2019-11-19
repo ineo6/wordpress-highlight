@@ -194,6 +194,10 @@ table.hljs-ln,
     border: none;
 }
 
+.hljs-ln td.hljs-ln-code:after {
+    content: " ";
+}
+
 td.hljs-ln-numbers {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
